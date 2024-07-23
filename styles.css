@@ -1,0 +1,93 @@
+
+
+
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --white:hsl(360,100%,100%);
+}
+html{
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kumbh Sans";
+}
+    
+}
+body{
+    background: url(images/bg-pattern-top.svg),url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat,no-repeat;
+    background-position:right 52vw bottom 35vh, left 48vw top 52vh;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3rem;
+}
+.hero-text{
+    background-color: var(--white);
+    /* text-align: center; */
+    border-radius: 0 0 1rem 1rem;
+}
+.profile{
+    width: 18rem;
+    display: grid;
+    grid-template-rows: 130px auto;
+    height: 380px;
+    border-radius: 1rem;
+    box-shadow: 0 0.875rem 1.75rem rgba(45, 50, 72, 0.25), 0 0.625rem 0.625rem rgba(45, 50, 72, 0.22);
+    position: relative;
+}
+picture{
+    background: url(images/bg-pattern-card.svg);
+    /* border: 1px solid red; */
+    border-radius: 1rem 1rem 0 0;
+}
+.credentials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+.data{
+    text-align: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--Dark-gray);
+}
+.stats-id,.location,.age{
+    color:var(--Dark-gray);
+}
+.stats-id{
+    margin-top: .5rem;
+    font-size: 14px;
+}
+.stats{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.profile-pic{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+    border-radius: 50%; 
+}
+.profile-pic img{
+    border-radius: 50%;
+    border: 5px solid var(--white);
+}
+
+/* @media screen and (min-width: 93.75em) {
+    body {
+      background-position: right 66vw bottom 53vh, left 71vw top 65vh;
+    }
+  } */
